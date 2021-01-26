@@ -1,0 +1,10 @@
+language: csharp
+solution: ./Taxi_New.sln 
+dist: bionic
+mono: none
+dotnet: 3.1
+install: 
+    - dotnet restore
+script:
+    - dotnet build
+    - dotnet test ./Taxi_New.API.Tests/Taxi_New.API.Tests.csproj  
